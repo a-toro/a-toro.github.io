@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boostrap page</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"> N-Vel Project</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Servicios"> Servicios </a></li>
+            <li><a href="#Experiencia"> Experiencia</a></li>
+            <li><a href="#Contacto"> Contacto</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Inicio-->
+      <div id="Inicio">
+        <h1> Inicio</h1>
+      </div>
+
+      <!--Servicios-->
+      <div id="Servicios">
+        <h1 class="text-center"> Servicios</h1>
+        <div class="row text-center">
+          <div class="col-sm-4"> Estadística</div>
+          <div class="col-sm-4"> R y RStudio</div>
+          <div class="col-sm-4"> Microsoft Excel</div>
+        </div>
+        
+      </div>
+
+      <!--Experiencia-->
+      <div id="Experiencia">
+        <h1>Experiencia</h1>
+      </div>
+
+      <!--Contacto-->
+      <div id="Contacto">
+        <h1 class="text-center">Contacto</h1>
+        
+          <form action="#">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="name">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email"> Email</label>
+              <input type="email" name="email" id="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="asunto"> Asunto</label>
+              <input type="text" name="asunto" id="asunto">
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="Mensaje"> Mensaje</label>
+              <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+
+
+
+          </form>
+        
+      </div>
+
+
+
+    <footer class="class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <small class="text-dark"> Todos los derechos resevados 2021&copy; <br> By William Toro</small>
+      </div>
+    </footer>
+    
+</body>
+</html>
