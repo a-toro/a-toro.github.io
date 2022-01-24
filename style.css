@@ -12,9 +12,11 @@ body {
 
 .contenedor {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 .encriptador {
     display: flex;
@@ -23,7 +25,7 @@ body {
     padding-left: 50px;
     width: 400px;
     padding-right: 50px;
-    border-radius: 15px;
+    border-radius: 15px;  
 }
 
 input {
@@ -49,9 +51,6 @@ input {
     border: none;
 }
 
-.btn-gray {
-    background-color: gray !important;
-}
 
 .buttons {
     display: flex;
@@ -70,4 +69,22 @@ h2 {
  
 P {
     margin: 5px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    width: initial;
+}
+
+#copiar-texto {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#validar-texto {
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }

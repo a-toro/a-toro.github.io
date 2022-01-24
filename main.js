@@ -2,7 +2,13 @@
 function encriptarMensaje () {
     let mensajeEntrada = document.getElementById("mensaje-entrada");
     let mensajeSalida = document.getElementById("mensaje-salida");
-    
+    let validarMensaje = document.getElementById("validar-texto");
+
+    if (!mensajeEntrada.value){
+        validarMensaje.innerHTML = "!Campo vacío, ingrese un texto valido!";
+        setTimeout(function () {validarMensaje.innerHTML =""}, 3000);
+    }
+
     let vocales = ["a", "e", "i", "o", "u"];
     // Vocales                  a      e      i      o      u
     let vocalesEncriptadas = ["ai", "enter", "imes", "ober", "ufat"];
@@ -26,6 +32,12 @@ function encriptarMensaje () {
 function desencriptarMensaje() {
     let mensajeEntrada = document.getElementById("mensaje-entrada").value;
     let mensajeSalida = document.getElementById("mensaje-salida");
+    let validarMensaje = document.getElementById("validar-texto");
+    
+    if (!mensajeEntrada){
+        validarMensaje.innerHTML = "!Campo vacío, ingrese un texto valido!";
+        setTimeout(function () {validarMensaje.innerHTML =""}, 3000);
+    }
 
     let vocales = ["a", "e", "i", "o", "u"];
     // Vocales                  a      e      i      o      u
@@ -49,6 +61,16 @@ function desencriptarMensaje() {
 
 function copiarMensaje() {
     let mensajeSalida = document.getElementById("mensaje-salida");
-    console.log(navigator.clipboard.writeText(mensajeSalida.value));
-    mensajeSalida.setSelectionRange(0, mensajeSalida.value.length)
+    let mensajeCopiarTexto = document.getElementById("copiar-texto");
+
+    if (mensajeSalida.value) {
+        navigator.clipboard.writeText(mensajeSalida.value);
+        mensajeSalida.setSelectionRange(0, mensajeSalida.value.length);
+        mensajeSalida.select();
+        mensajeCopiarTexto.innerHTML = "!Texto copiado con exito!";
+        setTimeout(function () {mensajeCopiarTexto.innerHTML =""}, 3000);
+    } else {
+        mensajeCopiarTexto.innerHTML = "!Campo vacío!";
+        setTimeout(function () {mensajeCopiarTexto.innerHTML =""}, 3000);
+    }
 }
